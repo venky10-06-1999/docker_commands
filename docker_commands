@@ -1,0 +1,12 @@
+docker build -t reactjsapp(name of the docker image) .(location of the docker file) or  // docker build -t reactjsapp .
+
+docker run -d -p 3898(local host port):3000(container port) reactjsapp(image name)  or //  docker run -d -p 3898:3000 reactjsapp
+
+check the application(http://localhost:3898)
+
+
+steps to remove docker image and container
+==========================================
+1)stop the container  command=> docker stop container_id
+2)remove the container command=>docker rm container_id
+3)remove the docker image =>docker rmi docker_image_id
